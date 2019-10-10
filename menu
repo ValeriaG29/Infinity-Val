@@ -28,6 +28,7 @@ menu="\nBienvenido, por favor digite un numero del 1 al 18 según el scrip que d
 18)Colores\n
 19)¿Quieres ver un dibujo?\n
 20)¿Quieres jugar un juego?\n
+21)Dados\n
 Para salir digite bye\n";
 pause(){
   read -p "Press [Enter] key to continue..." fackEnterKey
@@ -35,7 +36,7 @@ pause(){
 }
 read_options(){
         local choice
-        read -p "Enter choice [ 1 - 18 or bye for exit] " choice
+        read -p "Enter choice [ 1 - 21 or bye for exit] " choice
         case $choice in
                 1)/home/valeg/scrips/./hola_mundo.sh ;;
                 2)/home/valeg/scrips/./hola_mundov.sh ;;
@@ -57,6 +58,7 @@ read_options(){
                 18)/home/valeg/scrips/./18_Colores.sh ;;
                 19)/home/valeg/scrips/./dibujo.sh ;;
                 20)/home/valeg/scrips/./juego.sh ;;
+                21)/home/valeg/scrips/./dados.sh ;;
                 "bye")exit 0;;
                 *) echo -e "${RED}Error...${STD}" && sleep 1
 
