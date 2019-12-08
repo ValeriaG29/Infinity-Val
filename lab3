@@ -1,0 +1,165 @@
+#!/bin/bash
+echo "LAB 2. Crear archivos, desplegar su contenido y estadísticas"
+echo "Ingreso el comando de acuerdo a la instrucción\n"
+echo -e "Si el comando es correcto se mostrará el output\n"
+var1="echo "linux""
+var2="echo "world""
+var3="echo "hello""
+
+while true
+do
+        echo "1. Crear el archivo file1.txt (hint: touch)"
+        read comando1
+        if [[ $comando1 = "touch file1.txt" ]]
+        then
+                $comando1;
+                break;
+fi
+done
+while true
+do
+        echo "2. Cambia el timestamp del archivo file1.txt"
+        read comando2
+        if [[ $comando2 = "touch file1.txt" ]]
+        then
+                $comando2;
+                break;
+fi
+done
+while true
+do
+        echo "3. Crear el archivo file2.txt"
+        read comando3
+        if [[ $comando3 = "touch file2.txt" ]]
+        then
+                $comando3;
+                break;
+fi
+done
+while true
+do
+        echo "4. Despliega el contenido del directorio actual usando un comando diferente a ls"
+        read comando4
+        if [ $comando4 = "dir" ]
+        then
+                $comando4;
+                break;
+fi
+done
+echo -e "\n dir es equivalente a ls -C -b\n"
+sleep 5
+while true
+do
+        echo "5. Limpia el contenido de la terminal"
+        read comando5
+        if [ $comando5 = "clear" ]
+        then
+                $comando5;
+                break;
+fi
+done
+while true
+do
+        echo "6. Despliega el texto \"hello\" "
+        read comando6
+        if [[ $comando6 = 'echo "hello"' ]]
+        then
+                $var3;
+                break;
+fi
+done
+while true
+do
+        echo "7. Redirige la salida del comando anterior hacia un archivo con el mismo nombre y extensión .txt"
+        read comando7
+        if [[ $comando7 = 'echo "hello" > hello.txt' ]]
+        then
+                $comando7;
+                $var3 > hello.txt;
+                break;
+fi
+done
+while true
+do
+        echo "8. Adjunta el texto \"linux\" al archivo hello.txt"
+        read comando8
+        if [[ $comando8 = 'echo "linux" >> hello.txt' ]]
+        then
+                $comando8;
+                $var1 >> hello.txt;
+                break;
+fi
+done
+while true
+do
+        echo '9. Adjunta el texto "world" al archivo hello.txt'
+        read comando9
+        if [[ $comando9 = 'echo "world" >> hello.txt' ]]
+        then
+                                                                                                                                                                                93,10         42%
+                $comando9;
+                $var2 >> hello.txt;
+                break;
+fi
+done
+while true
+do
+        echo "10. Despliega en la pantalla en el contenido del archivo hello.txt"
+        read comando10
+        if [[ $comando10 = "cat hello.txt" ]]
+        then
+                $comando10;
+                break;
+fi
+done
+while true
+do
+        echo "11. Despliega en la pantalla el contenido del archivo hello.txt usando el comando head"
+        read comando11
+        if [[ $comando11 = "head hello.txt" ]]
+        then
+                $comando11;
+                break;
+fi
+done
+while true
+do
+        echo "12. Despliega solo las últimas dos lineas del archivo hello.txt"
+        read comando12
+        if [[ $comando12 = "tail -2 hello.txt" ]]
+        then
+                $comando12;
+                break;
+fi
+done
+while true
+do
+        echo "13. Despliega las últimas lineas del archivo hello.txt"
+        read comando13
+        if [[ $comando13 = "tail hello.txt" ]]
+        then
+                $comando13;
+                break;
+fi
+done
+while true
+do
+        echo "14. Muestra las estadisticas para el archivo hello.txt"
+        read comando14
+                                                                                                                                                                                142,2         85%
+if [[ $comando14 = "stat hello.txt" ]]
+        then
+                $comando14;
+                break;
+fi
+done
+while true
+do
+        echo "15. Muestra las estadisticas para la carpeta dir1"
+        read comando15
+        if [[ $comando15 = "stat dir1" ]]
+        then
+                $comando15;
+                break;
+fi
+done
