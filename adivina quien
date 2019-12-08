@@ -1,0 +1,392 @@
+echo -n "Digita tu nombre: "
+read NOMBRE
+echo -n "Muy bien $NOMBRE Para iniciar el nivel 1 escriba la palabra start: "
+read respuesta
+if [ $respuesta = start ]
+then
+        echo -e "Etaoa 1: Algo facil"
+        echo -e "Nivel 1, iniciemos con algo fácil\nTe ves perdido, necesitas saber dónde estas? ya sabes que usar: "
+        read comando
+        while [ $comando = "pwd" ];
+        do
+                echo -n "Respuesta correcta la contraseña para acceder al siguiente nivel es: 171199LDGA"
+                break
+                score1=10
+        done
+        while [ $comando != "pwd" ]
+        do
+                echo -n "si que estas perdido, intenta otra vez: "
+                read comando
+                if [ $comando = "pwd" ]
+                then
+                        echo -e "Respuesta correcta la contraseña para acceder al siguiente nivel es: 171199LDGA\n"
+                        score=5
+                        break
+                fi
+
+        done
+
+        echo -e "\nNivel 2, Uber\nIngrese contraseña: "
+        read pass
+        if [ $pass = "171199LDGA" ]
+        then
+                        echo -e "- Necesito quien me lleve\n+Ya intentaste llamandole a: "
+                        read comando2
+                                while [ $comando2 = "cd" ];
+                                do
+                                        echo -n "Necesitas quien te lleve al siguiente nivel? Respuesta correcta la contraseña para el siguiente nivel es: 121077MCAZ"
+                                        break
+                                        score
+                                done
+                                while [ $comando2 != "cd" ]
+                                do
+                                        echo -n "UY! Así nunca podras llegar al siguiente nivel, intenta de nuevo: "
+                                        read comando2
+                                        if [ $comando2 = "cd" ]
+                                        then
+                                                echo "Respuesta correcta la contraseña para el siguiente nivel es : 121077MCAZ"
+                                                break
+                                        fi
+                                done
+
+                        else
+                echo -n "contraseña incorrecta"
+                        echo -e "\nNivel 3, El desorden\nIngrese contraseña: "
+        read pass2
+        if [ $pass2 = "121077MCAZ" ]
+        then
+        echo -n "No vas a ningun lado hasta que limpies este desastre : "
+        read c3
+                while [ $c3 = "clear" ];
+                do
+                echo -n "Todo limpio por aquí, ya puedes acceder al siguiente nivel: 290101VCGA"
+                break
+        done
+        while [ $c3 != "clear" ]
+        do
+                echo -n "Te dije que limpiaras este desastre, intenta de nuevo: "
+                read c3
+                if [ $c3 = "clear" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 290101VCGA"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 4, Desapareciendo el error\nIngrese contraseña: "
+        read pass3
+        if [ $pass3 = "290101VCGA" ]
+        then
+        echo -n "Necesitamos quitar esto antes de que se den cuenta del error : "
+        read c4
+                while [ $c4 = "rm" ];
+                do
+                echo -n "Listo no se dieron cuenta, vamonos: 021200VGSS"
+                break
+        done
+        while [ $c4 != "rm" ]
+        do
+                echo -n "Apurate se van a dar cuenta, intenta de nuevo: "
+                read c4
+                if [ $c4 = "rm" ]
+                then
+                        echo -n "Rapido vamonos la contraseña para el siguiente nivel es: 021200VGSS"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+                                                                                                                                                                                108,12        18%
+        echo -e "\nNivel 5, Creando lugares\nIngrese contraseña: "
+        read pass4
+        if [ $pass4 = "021200VGSS" ]
+        then
+        echo -n "Necesitamos crear una nueva direccion : "
+        read c5
+                while [ $c5 = "mkdir" ];
+                do
+                echo -n "Respuesta correcta, ya puedes acceder al siguiente nivel: 030713XGA"
+                break
+        done
+        while [ $c5 != "mkdir" ]
+        do
+                echo -n "Respuesta incorrecta, intenta de nuevo: "
+                read c5
+                if [ $c5 = "mkdir" ]
+                then
+                        echo -e "Respuesta correcta la contraseña para el siguiente nivel es: 030713XGA\n"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nEtapa 2 Todo esto estuvo muy facil y divertido pero es hora de crecer, estas listo para los comandos que vienen? saca tus PDFS si es necesario"
+
+        echo -e "\nNivel 6, El colador\nIngrese contraseña: "
+        read pass5
+        if [ $pass5 = "030713XGA" ]
+        then
+        echo -n "Necesitamos filtrar el contenido de los ficheros : "
+        read c6
+                while [ $c6 = "grep" ];
+                do
+                echo -n "Hay que filtrarnos al siguiente nivel: 100857MMUO"
+                break
+        done
+        while [ $c6 != "grep" ]
+        do
+                echo -n "Necesitas infiltrarte al siguiente, intenta de nuevo: "
+                read c6
+                if [ $c6 = "grep" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 100857MMUO"
+                        break
+                fi
+        done
+        else
+                                                                                                                                                                                120,12        32%
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 7 , el club de los 25 \nIngrese contraseña: "
+        read pass6
+        if [ $pass6 = "100857MMUO" ]
+        then
+        echo -n "Muestra el contenido de un fichero con pausas cada 25 lineas : "
+        read c7
+                while [ $c7 = "more" ];
+                do
+                echo -n "Para poder acceder al siguiente nivel usa: 270297EGU"
+                break
+        done
+        while [ $c7 != "more" ]
+        do
+                echo -n "Intenta de nuevo: "
+                read c7
+                if [ $c7 = "more" ]
+                then
+                        echo -n "Respuesta correcta, la contraseña para el siguiente nivel es: 270297EGU"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 8, Te doy permiso\nIngrese contraseña: "
+        read pass7
+        if [ $pass7 = "270297EGU" ]
+        then
+        echo -e "\n-Me das permiso por favor?\n +No se preguntale a: "
+        read c8
+                while [ $c8 = "chmod" ];
+                do
+                echo -e "\n -Me dijo que si \n+ Oh perfecto pues ya puedes acceder al siguiente nivel: 240777HGU"
+                break
+        done
+        while [ $c8 != "chmod" ]
+        do
+                echo -n "Uy bueno preguntale otra vez si te da permiso: "
+                read c8
+                if [ $c8 = "chmod" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 240777HGU"
+                        break
+                fi
+        done
+                                                                                                                                                                                207,12        46%
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 9, Soy el dueño de todo\nIngrese contraseña: "
+        read pass8
+        if [ $pass8 = "240777HGU" ]
+        then
+        echo -n "Cambia los permisos de usuario : "
+        read c9
+                while [ $c9 = "chown" ];
+                do
+                echo -n "Ya puedes acceder al siguiente nivel: 140211AVGU"
+                break
+        done
+        while [ $c9 != "chown" ]
+        do
+                echo -n "Intenta de nuevo: "
+                read c9
+                if [ $c9 = "chown" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 140211AVGU"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 10, Archivista\nIngrese contraseña: "
+        read pass9
+        if [ $pass9 = "140211AVGU" ]
+        then
+        echo -n "Archivador de ficheros : "
+        read c10
+                while [ $c10 = "tar" ];
+                do
+                echo -n "Puedes acceder al siguiente nivel: 210790CGU"
+                break
+        done
+        while [ $c10 != "tar" ]
+        do
+                echo -n "TRy Again: "
+                read c10
+                if [ $c10 = "tar" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 210790CGU"
+                        break
+                fi
+        done
+                                                                                                                                                                                257,10        61%
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nEtapa 3: Recta final"
+
+        echo -e "\nNivel 11, Apodos\nIngrese contraseña: "
+        read pass10
+        if [ $pass10 = "210790CGU" ]
+        then
+        echo -n "Cuando su nombre es muy largo es más sencillo llamarlo por su : "
+        read c11
+                while [ $c11 = "alias" ];
+                do
+                echo -n "Hey ya puedes acceder al siguiente nivel: 071200JTR"
+                break
+        done
+        while [ $c11 != "alias" ]
+        do
+                echo -n "Intenta de nuevo: "
+                read c11
+                if [ $c11 = "alias" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 071200JTR"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 12, Problemas de identidad\nIngrese contraseña: "
+        read pass11
+        if [ $pass11 = "071200JTR" ]
+        then
+        echo -n "La pregunta filosofica más cliche : "
+        read c12
+                while [ $c12 = "whoami" ];
+                do
+                echo -n "Eres alguien que ya puedes acceder al siguiente nivel: 251104YSC"
+                break
+        done
+        while [ $c12 != "whoami" ]
+        do
+                echo -n "quien eres?, intenta de nuevo: "
+                read c12
+                if [ $c12 = "whoami" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 251104YSC"
+                                                                                                                                                                                306,9         75%
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 13, Desmontando\nIngrese contraseña: "
+        read pass12
+        if [ $pass12 = "251104YSC" ]
+        then
+        echo -n "Sirve para desmontar unidades : "
+        read c13
+                while [ $c13 = "umount" ];
+                do
+                echo -n "Acabas de desmontar este nivel para acceder al siguiente nivel: 090410CGA"
+                break
+        done
+        while [ $c13 != "umount" ]
+        do
+                echo -n "Intenta de nuevo: "
+                read c13
+                if [ $c13 = "umount" ]
+                then
+                        echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 090410CGA"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nNivel 14, El desorden 2.0\nIngrese contraseña: "
+        read pass13
+        if [ $pass13 = "090410CGA" ]
+        then
+        echo -n "Deberias ser un poco más ordenado : "
+        read c14
+                while [ $c14 = "sort" ];
+                do
+                echo -n "Ya puedes acceder al siguiente nivel: 090810CLSS"
+                break
+        done
+        while [ $c14 != "sort" ]
+        do
+                echo -n "Si fueras más ordenado sabrias donde dejaste la respuesta correcta, intenta de nuevo: "
+                read c14
+                if [ $c14 = "clear" ]
+                then
+                                                                                                                                                                                355,9         89%
+ echo -n "Respuesta correcta la contraseña para el siguiente nivel es: 090810CLSS"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+        echo -e "\nUltimo nivel, No todos somos iguales\nIngrese contraseña: "
+        read pass14
+        if [ $pass14 = "090810CLSS" ]
+        then
+        echo -n "Muestra las diferencias entre 2 ficheros : "
+        read c15
+                while [ $c15 = "diff" ];
+                do
+                echo -n "Felicidades!!! $NOMBRE has terminado"
+                break
+        done
+        while [ $c15 != "diff" ]
+        do
+                echo -n "Intenta de nuevo: "
+                read c15
+                if [ $c15 = "diff" ]
+                then
+                        echo -n "Felicidades!!! $NOMBRE has terminado"
+                        break
+                fi
+        done
+        else
+        echo -n "Contraseña incorrecta"
+        fi
+
+
+fi
+
+
+
+                                                                                                                                                                              37,1-8         2%
