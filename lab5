@@ -1,0 +1,139 @@
+#!/bin/bash
+echo -e "Laboratorio 5\n"
+while true
+do
+        echo "Busca la palabra linux en el archivo hello"
+        read comando
+        if [ $comando = "grep" ]
+        then
+                grep -i linux dir3/hello.txt;
+                break;
+        else
+                echo "error"
+        fi
+done
+while true
+do
+        echo "2.-Busca la palabra Hello en toda la carpeta actual"
+        read comando2
+        if [ $comando2 = "grep -r" ]
+        then
+                grep -r lab5/;
+                break;
+        else
+                echo "error"
+        fi
+done
+while true
+do
+        echo "3.-Busca la palabra Linux en el archivo Hello, imprimiendo el numero de linea del archivo"
+        read comando3
+        if [ $comando3 = "grep -n" ]
+        then
+                grep -n linux dir3/hello.txt;
+                break;
+        else
+                echo "error"
+        fi
+done
+while true
+do
+        echo "4.-Desploega las lineas que no coinciden con el patron de busqueda"
+        read comando4
+        if [ $comando4 = "grep -v" ]
+        then
+                grep -v world dir3/hello.txt;
+                break;
+        else
+                echo "error"
+        fi
+                                                                                                                                                                                1,8      Comienzo
+done
+while true
+do
+        echo " Encuentra la linea mas larga dentro del archivo hello"
+        read comando5
+        if [ $comando5 = "wc" ]
+        then
+                wc -L /home/valeg/lab3/dir2/hello.txt;
+                break;
+        else
+                echo "error"
+        fi
+done
+while true
+do
+        echo "Agregar contenido a los archivos new.txt y linux.txt"
+        read comando
+        if [ $comando = "archivos" ]
+        then
+                touch new.txt linux.txt;
+                echo -e "col1 col2 r1\ncol5 col6 r2\ncol3 col4 r3 " >> new.txt;
+                echo -e "Hello\nlinux\nProgrammers paradise" >> linux.txt;
+                break;
+        else
+                echo "error"
+        fi
+done
+while true
+do
+        echo "7.-Muestra solo la primera columna del archivo new.txt"
+        read comando7
+        if [ $comando7 = "cut" ]
+        then
+                cut -fi -d' ' new.txt
+                break;
+        else
+                echo "erorr"
+        fi
+done
+while true
+do
+        echo "8.-Extrae la tercera columna del archivo new.txt"
+        read comando8
+        if [ $comando8 = "cut -f3" ]
+        then
+                cut -f3 -d' ' new.txt;
+                break;
+
+        else
+                                                                                                                                                                                93,1-8        56%
+echo "error"
+        fi
+done
+while true
+do
+        echo "9.-Mezvla las lineas de los archivos hello y linux"
+        read comando9
+        if [ $comando9 = "paste" ]
+        then
+
+                break;
+        fi
+done
+while true
+do
+        echo "10.- Ordena el contenido del archivo new.txt"
+        read comando10
+        if [ $comando10 = "sort" ]
+        then
+                sort new.txt;
+                break;
+        else
+                "error"
+        fi
+done
+while true
+do
+        echo "11.-Comprueba el contenido del archivo hello y linux.txt"
+        read respuesta
+        if [ $respuesta = "diff"]
+        then
+                diff;
+                break;
+        else
+                "error"
+        fi
+done
+
+                                                                           
